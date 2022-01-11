@@ -1,6 +1,7 @@
 const { app, BrowserWindow, globalShortcut, ipcMain } = require('electron');
 const path = require('path');
 const preload = path.join(__dirname, 'preload.js');
+const windowEntryPoint = 'dist/index.html';
 const configuration = {
 	webPreferences: { preload },
 	resizable: false,
@@ -11,7 +12,7 @@ const configuration = {
 
 const createWindow = () => {
 	const mainWindow = new BrowserWindow(configuration);
-	mainWindow.loadFile('../../dist/index.html').then(() => {});
+	mainWindow.loadFile(windowEntryPoint).then(() => {});
 
 	globalShortcut.register('CommandOrControl+R', () => mainWindow.reload());
 	globalShortcut.register('Command+Option+J', () => mainWindow.openDevTools());

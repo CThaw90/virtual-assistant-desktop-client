@@ -1,6 +1,6 @@
 const { contextBridge, ipcRenderer } = require('electron');
-const electron = require('electron');
+const MAIN_API = 'api';
 
-contextBridge.exposeInMainWorld('api', {
+contextBridge.exposeInMainWorld(MAIN_API, {
     close: () => ipcRenderer.send('node', 'closeApp')
 });
