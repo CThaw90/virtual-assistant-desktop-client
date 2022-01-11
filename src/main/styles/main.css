@@ -1,0 +1,27 @@
+body {
+    margin: 5px;
+}
+
+.draggable-handle {
+    -webkit-app-region: drag;
+    position: static;
+    height: 25px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+div.title-bar {
+    margin: 0 15px;
+}
+
+div.title-bar i {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    float: right;
+}
+
+div.title-bar i:hover {
+    color: #000;
+}

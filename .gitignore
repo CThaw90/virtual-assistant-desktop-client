@@ -1,0 +1,16 @@
+# JetBrains
+# =========
+.idea/
+
+# Distribution
+# =========
+dist/
+
+# Node Modules
+# =========
+node_modules/
+yarn.lock
+
+# Electron
+# =========
+desktop-client-*

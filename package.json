@@ -1,0 +1,35 @@
+{
+  "name": "desktop-client",
+  "version": "0.0.0",
+  "description": "Organizer Idea/The Virtual assistant desktop client ",
+  "main": "src/main/index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "start": "yarn build && electron src/main/.",
+    "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
+    "echo": "echo $npm_package_name-$npm_package_version"
+  },
+  "productName": "Virtual Assistant",
+  "repository": "https://github.com/CThaw90/desktop-client.git",
+  "author": "Chris Thaw <christhaw90gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "electron": "^15.3.0",
+    "electron-packager": "^15.4.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
