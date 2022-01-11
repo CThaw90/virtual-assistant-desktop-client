@@ -2,12 +2,14 @@
   "name": "desktop-client",
   "version": "0.0.0",
   "description": "Organizer Idea/The Virtual assistant desktop client ",
-  "main": "src/main/index.js",
+  "main": "index.js",
+  "distributionName": "$npm_package_name-$npm_package_version",
+  "osxDistributionName": "$npm_package_distributionName-darwin-x64/$npm_package_distributionName.app",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "yarn build && electron src/main/.",
-    "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
-    "echo": "echo $npm_package_name-$npm_package_version"
+    "dist": "webpack --mode=production && electron-packager . $npm_distributionName",
+    "osxBuild": "yarn dist && electron-osx-sign '$npm_package_osxDistributionName' --provisioning-profile=../virtualassistantdesktopclient.provisionprofile --identity=A989021A93241FFEB08A4FC8B8AFCDB3F58D337E"
   },
   "productName": "Virtual Assistant",
   "repository": "https://github.com/CThaw90/desktop-client.git",
@@ -24,6 +26,7 @@
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "electron": "^15.3.0",
+    "electron-osx-sign": "^0.6.0",
     "electron-packager": "^15.4.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.6",
