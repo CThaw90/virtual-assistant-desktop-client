@@ -9,7 +9,7 @@
     "build": "webpack --mode=development",
     "start": "yarn build && electron src/main/.",
     "dist": "webpack --mode=production && electron-packager . $npm_distributionName",
-    "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app' $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity",
+    "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity",
     "echo": "echo electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity"
   },
   "productName": "Virtual Assistant",
