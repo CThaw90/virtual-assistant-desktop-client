@@ -7,7 +7,7 @@
   "osxSignedIdentity": "--identity=A989021A93241FFEB08A4FC8B8AFCDB3F58D337E",
   "scripts": {
     "build": "webpack --mode=development",
-    "clean": "rm -rf dist $npm_package_name-$npm_package_version*",
+    "clean": "rm -rf dist $npm_package_name-*",
     "start": "yarn build && electron .",
     "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
     "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity",
