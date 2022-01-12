@@ -19,7 +19,7 @@
     "osxCompress": "zip -r $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app",
     "osxNotarize": "xcrun notarytool submit $npm_package_name-$npm_package_version.zip --keychain-profile VirtualAssistantPassword --apple-id accounts.tech@gscbinc.com --team-id BBG3B2DTV5 --password xmty-ltkk-ovqk-fuoc",
     "postosxNotarize": "mv $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-64/",
-    "osxRelease": "yarn osxBuild && yarn osxCompress && yarn osxRelease",
+    "osxRelease": "yarn osxBuild && yarn osxCompress && yarn osxNotarize",
     "echo": "echo rm -rf dist $npm_package_name-$npm_package_version*"
   },
   "productName": "Virtual Assistant",
