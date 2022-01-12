@@ -14,12 +14,11 @@
     "clean": "rm -rf dist $npm_package_name-*",
     "start": "yarn build && electron .",
     "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
-    "navigateOSXBuild": "cd $npm_package_name-$npm_package_version-darwin-x64",
     "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity --hardened-runtime",
     "osxCompress": "zip -r $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app",
     "preosxNotarize": "security default-keychain -s virtual-assistant.keychain && security unlock-keychain -p $SYSTEM_PASSWORD virtual-assistant.keychain",
     "osxNotarize": "xcrun notarytool submit $npm_package_name-$npm_package_version.zip --keychain-profile VirtualAssistantPassword --apple-id accounts.tech@gscbinc.com --team-id BBG3B2DTV5 --password xmty-ltkk-ovqk-fuoc",
-    "postosxNotarize": "mv $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-64/",
+    "postosxNotarize": "mv $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-x64/",
     "osxRelease": "yarn osxBuild && yarn osxCompress && yarn osxNotarize",
     "echo": "echo rm -rf dist $npm_package_name-$npm_package_version*"
   },
