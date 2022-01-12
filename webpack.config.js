@@ -15,6 +15,7 @@ const MiniCssExtractPluginConfig = new MiniCssExtractPlugin({ filename: './css/m
 
 module.exports = {
     entry: APP_DIR + '/entry.js',
+    devtool: 'inline-source-map',
     output: {
         path: BUILD_DIR,
         filename: 'index.js'

@@ -1,0 +1,97 @@
+[{
+  "question": "Welcome :-) Thank you for choosing the virtual assistant, what can I assist you with?",
+  "answers": [
+    "I have trouble keeping track of email and documents",
+    "I don't know how organize my emails and documents",
+    "I have a particular method to organization and storage but I don't do it as often as I would like",
+    "Organization isn't something I really care for, but I'm here to check it out"
+  ]
+}, {
+  "question": "When I am finished reasoning an email, you usually put it...",
+  "answers": [
+    "Move it to somewhere I can see it, if it's important",
+    "Move it to its respective folder, or any folder. I just like a clear space",
+    "Leave it where it is, I'll come back to it later if I need it again",
+    "Record all the important information and then delete"
+  ]
+}, {
+  "question": "Your email inbox is usually...",
+  "answers": [
+    "Cluttered, but I search my inbox for what I need",
+    "Organized, everything has its own folder",
+    "Distributed among different folders, but the folders aren't really organized",
+    "Cluttered with mundane files, but my important projects have their own folders"
+  ]
+}, {
+  "question": "Your desktop usually looks...",
+  "answers": [
+    "Cluttered, with all the files/images I've used last",
+    "Relatively organized, but I sometimes have some misc. files I haven't categorized yet",
+    "Clutter-free for the most part, but my individual files are a mess",
+    "A bit cluttered, but just with my daily project items"
+  ]
+}, {
+  "question": "Is it difficult to get rid of old files?",
+  "answers": [
+    "Not really, I just haven't gotten around to it yet",
+    "Sometimes, I may need them later but don't know where to put them",
+    "I usually do a periodic purge of everything",
+    "I only delete files when my storage is full"
+  ]
+}, {
+  "question": "When it comes to organizing your desktop, you usually...",
+  "answers": [
+    "Have to spend time purging your folders before you can categorize anything",
+    "Place items in their respective folders when downloading them",
+    "Re-organize once a week",
+    "Want to have an organized desktop, but random file pile up so fast"
+  ]
+}, {
+  "question": "What would make your laptop easier to look at?",
+  "answers": [
+    "All my important projects stored in files with cool icons",
+    "Everything organized in their respective folders equidistant from each other on my desktop",
+    "Everything stored out of sight except for a few widgets",
+    "All my current projects/important documents stored on my desktop for easy access"
+  ]
+}, {
+  "question": "When it comes to your display them...",
+  "answers": [
+    "Bright, fun, and full of visual abundance",
+    "Minimal visual, functional, organized",
+    "Pretty, inviting, with minimal visual clutter",
+    "It depends on my mood, but I like to have things organized"
+  ]
+}, {
+  "question": "Organizing systems that work best for you are..",
+  "answers": [
+    "Visual systems that are fast and easy to use, like hooks or open baskets on a shelf",
+    "Details systems that are hidden such as file cabinets or subdivided compartments",
+    "Hidden systems that are easy to use, such as baskets in the closet or drawer dividers",
+    "Visual systems that are carefully organized, such as pegboards or clear drawers"
+  ]
+}, {
+  "question": "Your biggest organizing challenge is...",
+  "answers": [
+    "I don't like to hide things out of sight; I'm afraid I will forget about them",
+    "I just haven't scheduled time to organize some areas efficiently",
+    "I tend to neglect hidden areas in my home, like storage rooms",
+    "I hate putting things away that I am just going to take out again later"
+  ]
+}, {
+  "question": "You prefer your daily-use items...",
+  "answers": [
+    "Out where I can easily use them and not misplace them",
+    "Organized properly and put away",
+    "Out of sight, but still fast and easy to find",
+    "Visible and organized properly for quick access"
+  ]
+}, {
+  "question": "You remember things best from...",
+  "answers": [
+    "Visual Pictures and instructions",
+    "Reading and researching about it",
+    "Someone showing me how to do it",
+    "Writing things down"
+  ]
+}]

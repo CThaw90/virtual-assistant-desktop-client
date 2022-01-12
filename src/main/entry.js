@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Application from './Application';
+import App from './app';
 
 import './styles';
 
@@ -9,4 +9,4 @@ appContainer.id = 'application';
 appContainer.className = 'application root';
 document.body.appendChild(appContainer);
 
-ReactDOM.render(<Application />, appContainer);
+ReactDOM.render(<App />, appContainer);

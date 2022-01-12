@@ -1,0 +1,18 @@
+.survey h1 {
+    margin: 0 30px 5px 30px;
+}
+
+.survey ul.survey {
+    padding: 0;
+}
+
+.survey ul.survey li.survey-item {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.survey ul.survey li.survey-item i {
+    margin-right: 5px;
+    cursor: pointer;
+}

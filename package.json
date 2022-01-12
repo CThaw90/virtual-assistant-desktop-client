@@ -1,6 +1,6 @@
 {
   "name": "desktop-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Organizer Idea/The Virtual assistant desktop client ",
   "main": "index.js",
   "osxProvisioningProfile": "--provisioning-profile=../virtualassistantdesktopclient.provisionprofile",
@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "clean": "rm -rf dist $npm_package_name-$npm_package_version*",
-    "start": "yarn build && electron src/main/.",
+    "start": "yarn build && electron .",
     "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
     "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity",
     "echo": "echo rm -rf dist $npm_package_name-$npm_package_version*"
