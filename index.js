@@ -12,7 +12,7 @@ const configuration = {
 
 const createWindow = () => {
 	const mainWindow = new BrowserWindow(configuration);
-	mainWindow.loadFile(windowEntryPoint).then(() => {});
+	mainWindow.loadFile(windowEntryPoint).then(() => {}).catch(error => console.log(error));
 
 	globalShortcut.register('CommandOrControl+R', () => mainWindow.reload());
 	globalShortcut.register('Command+Option+J', () => mainWindow.openDevTools());
@@ -24,7 +24,7 @@ app.whenReady().then(() => {
 	app.on('activate', function () {
 		if (BrowserWindow.getAllWindows().length === 0) createWindow()
 	});
-});
+}).catch(error => console.log(error));
 
 app.on('window-all-closed', app.quit);
 
