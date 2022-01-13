@@ -16,12 +16,13 @@ const createWindow = () => {
 
 	globalShortcut.register('CommandOrControl+R', () => mainWindow.reload());
 	globalShortcut.register('Command+Option+J', () => mainWindow.openDevTools());
-}
+};
 
 app.whenReady().then(() => {
 	createWindow();
 
 	app.on('activate', function () {
+		console.log('Activated');
 		if (BrowserWindow.getAllWindows().length === 0) createWindow()
 	});
 }).catch(error => console.log(error));
