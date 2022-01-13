@@ -16,6 +16,7 @@
     "dist": "webpack --mode=production && electron-packager . $npm_package_name-$npm_package_version",
     "osxBuild": "yarn dist && electron-osx-sign $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_osxProvisioningProfile $npm_package_osxSignedIdentity --entitlements --hardened-runtime",
     "osxCompress": "ditto -c -k --sequesterRsrc --keepParent $npm_package_name-$npm_package_version-darwin-x64/$npm_package_name-$npm_package_version.app $npm_package_name-$npm_package_version.zip",
+    "preosxNotarize": "security default-keychain -s virtual-assistant.keychain && security unlock-keychain -p $SYSTEM_PASSWORD virtual-assistant.keychain",
     "osxNotarize": "xcrun notarytool submit $npm_package_name-$npm_package_version.zip --keychain-profile VirtualAssistantPassword --apple-id accounts.tech@gscbinc.com --team-id BBG3B2DTV5 --password xmty-ltkk-ovqk-fuoc --wait",
     "postosxNotarize": "mv $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version-darwin-x64/",
     "osxRelease": "yarn osxBuild && yarn osxCompress && yarn osxNotarize",
