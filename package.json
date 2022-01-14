@@ -1,6 +1,6 @@
 {
   "name": "desktop-client",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Organizer Idea/The Virtual assistant desktop client ",
   "main": "index.js",
   "osxProvisioningProfile": "--provisioning-profile=../virtualassistantdesktopclient.provisionprofile",
