@@ -42,7 +42,7 @@
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
-    "electron": "^15.3.0",
+    "electron": "^16.0.7",
     "electron-osx-sign": "^0.6.0",
     "electron-packager": "^15.4.0",
     "html-webpack-plugin": "^5.5.0",
